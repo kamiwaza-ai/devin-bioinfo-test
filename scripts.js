@@ -190,6 +190,13 @@ function initializeVariantTable(analysisData) {
                         render: function(data) {
                             return data ? data.toFixed(1) : '0.0';
                         }
+                    },
+                    {
+                        data: 'clinvar_significance',
+                        title: 'ClinVar Significance',
+                        render: function(data) {
+                            return data || 'Unknown';
+                        }
                     }
                 ],
                 pageLength: 25,
