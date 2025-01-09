@@ -9,8 +9,8 @@ This document outlines the steps Devin (our AI software engineer) will follow to
 3. **Create an interactive HTML-based report** to display the results.
 
 ### Input:
-- VCF file: `Tyler_Houchin_nucleus_dna_download_vcf_NU-JYOC-5394.vcf.gz`  
-  **Download URL:** [VCF File](https://drive.google.com/file/d/1pShDcHLHdktMZtwH5bVBw1ymO99YXq1m/view?usp=sharing)
+- VCF file: `Tyler_Houchin_nucleus_dna_download_vcf_NU-JYOC-5394.vcf`  
+  **Location:** The file has already been downloaded and unzipped in the root directory.
 
 ### Output:
 - A single HTML file with:
@@ -22,11 +22,8 @@ This document outlines the steps Devin (our AI software engineer) will follow to
 
 ## Step 1: Preprocessing the VCF File
 ### Instructions:
-1. **Download and decompress the file:**
-   ```bash
-   wget <VCF URL> -O Tyler_Houchin_nucleus_dna_download_vcf_NU-JYOC-5394.vcf.gz
-   gunzip Tyler_Houchin_nucleus_dna_download_vcf_NU-JYOC-5394.vcf.gz
-   ```
+1. **Locate the file in the root directory:**
+   `Tyler_Houchin_nucleus_dna_download_vcf_NU-JYOC-5394.vcf`
 2. Use a library like `PyVCF` or `pysam` to parse the VCF file in Python.
 3. Extract essential fields for each variant:
    - Chromosome (`CHROM`)
