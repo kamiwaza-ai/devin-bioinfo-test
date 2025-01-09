@@ -1,0 +1,9 @@
+# Generated files
+variants.json
+analysis_results.json
+clinvar_cache.json
+__pycache__/
+*.pyc
+
+# Large data files
+*.vcf
